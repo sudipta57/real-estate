@@ -6,16 +6,13 @@ import Navbar from "./component/Navbar";
 import About from "./pages/About";
 import BlogScreen from "./pages/BlogScreen";
 import Contact from "./pages/Contact";
-import RegisterScreen from "./pages/Signup";
-import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
+import Login from "./pages/Login";
+import RegisterScreen from "./pages/Signup";
 
 import "@fontsource/abhaya-libre"; // Default font weights
 
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 import Property from "./pages/Property";
 
 function App() {
