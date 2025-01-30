@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
             {/* Brand Logo */}
             <h2 className="text-lg font-bold">
-              Copyright@RealEstate | developed by SECWEBXPERTS PVT. LTD.
+              Copyright@REAL-E-12 | developed by SECWEBXPERTS PVT. LTD.
             </h2>
 
             {/* Navigation Links */}
