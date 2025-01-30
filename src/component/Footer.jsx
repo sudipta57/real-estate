@@ -62,8 +62,8 @@ const Footer = () => {
         <div className="relative z-10 border-t border-gray-600 pt-6 mt-8">
           <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
             {/* Brand Logo */}
-            <h2 className="text-2xl font-bold">
-              Real <span className="text-orange-500">Estate</span>
+            <h2 className="text-lg font-bold">
+              Copyright@RealEstate | developed by SECWEBXPERTS PVT. LTD.
             </h2>
 
             {/* Navigation Links */}
