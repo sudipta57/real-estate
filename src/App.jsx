@@ -1,4 +1,9 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
 import Footer from "./component/Footer";
 import Home from "./component/Home";
@@ -9,16 +14,21 @@ import Contact from "./pages/Contact";
 import ForgotPassword from "./pages/ForgotPassword";
 import Login from "./pages/Login";
 import RegisterScreen from "./pages/Signup";
+import Property from "./pages/Property";
 
 import "@fontsource/abhaya-libre"; // Default font weights
 
-import "./App.css";
-import Property from "./pages/Property";
-
 function App() {
+  const location = useLocation();
+
+  // List of routes where Navbar and Footer should be hidden
+  const hideNavAndFooter = ["/sign-up", "/sign-in", "/forgot-password"];
+  const shouldHide = hideNavAndFooter.includes(location.pathname);
+
   return (
-    <Router>
-      <Navbar />
+    <>
+      {/* Conditionally render Navbar */}
+      {!shouldHide && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
@@ -29,9 +39,18 @@ function App() {
         <Route path="/sign-in" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
-      <Footer />
+      {/* Conditionally render Footer */}
+      {!shouldHide && <Footer />}
+    </>
+  );
+}
+
+function AppWrapper() {
+  return (
+    <Router>
+      <App />
     </Router>
   );
 }
 
-export default App;
+export default AppWrapper;

@@ -7,7 +7,8 @@ export default {
         customYellow: "#FF9D00",
       },
       fontFamily: {
-        abhaya: ['"Abhaya Libre"', 'serif'], // Add Abhaya Libre
+        abhaya: ['"Abhaya Libre"', "serif"], // Add Abhaya Libre
+        poppins: ['"Poppins"', "sans-serif"],
       },
     },
   },

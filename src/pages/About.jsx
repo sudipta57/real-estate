@@ -1,5 +1,4 @@
 import React from "react";
-import { FiArrowRight } from "react-icons/fi";
 const stats = [
   { value: "20K+", label: "Satisfied Customers" },
   { value: "15+", label: "Years of Experience" },
@@ -11,19 +10,19 @@ const items = [
     title: "Find Excellent Deals",
     description:
       "Explore our extensive listings of properties, ranging from cozy apartments to luxurious estates.",
-    icon: "🔄", // Replace with your actual icon or image
+    icon: "/about/help-icon1.png", // Replace with your actual icon or image
   },
   {
     title: "Outstanding Property",
     description:
       "Explore our extensive listings of properties, ranging from cozy apartments to luxurious estates.",
-    icon: "🏡", // Replace with your actual icon or image
+    icon: "/about/help-icon2.png", // Replace with your actual icon or image
   },
   {
     title: "Find Excellent Deals",
     description:
       "Explore our extensive listings of properties, ranging from cozy apartments to luxurious estates.",
-    icon: "📊", // Replace with your actual icon or image
+    icon: "/about/help-icon3.png", // Replace with your actual icon or image
   },
 ];
 const teamMembers = [
@@ -64,42 +63,42 @@ const testimonials = [
       "ProNest exceeded my expectations! Their platform is intuitive, user-friendly, and efficient. Found my dream home in no time! Highly recommended.",
     name: "Emily Chen",
     role: "Marketing Manager",
-    image: "https://via.placeholder.com/100", // Replace with actual avatar URL
+    image: "/about/client1.png",
   },
   {
     quote:
       "ProNest's expert agents provided exceptional service, guiding me through every step. Their local market knowledge is unparalleled.",
     name: "David Lee",
     role: "Entrepreneur",
-    image: "https://via.placeholder.com/100", // Replace with actual avatar URL
+    image: "/about/client2.png",
   },
   {
     quote:
       "ProNest's seamless search functionality saved me time and stress. Their mobile app is convenient and easy to use.",
     name: "Sarah Taylor",
     role: "Doctor",
-    image: "https://via.placeholder.com/100", // Replace with actual avatar URL
+    image: "/about/client3.png",
   },
   {
     quote:
       "ProNest's property alerts kept me informed about new listings instantly. Their website is modern and easy to navigate.",
     name: "Mark Davis",
     role: "Travel Writer",
-    image: "https://via.placeholder.com/100", // Replace with actual avatar URL
+    image: "/about/client4.png",
   },
   {
     quote:
       "I highly recommend ProNest for reliable and efficient real estate services. Their team is knowledgeable and responsive.",
     name: "Rachel Patel",
     role: "Lawyer",
-    image: "https://via.placeholder.com/100", // Replace with actual avatar URL
+    image: "/about/client5.png",
   },
   {
     quote:
       "ProNest's market analysis tools helped me make informed investment decisions. Accurate and up-to-date data.",
     name: "James Martin",
     role: "Investment Banker",
-    image: "https://via.placeholder.com/100", // Replace with actual avatar URL
+    image: "/about/client6.png",
   },
 ];
 const articles = [
@@ -110,6 +109,7 @@ const articles = [
     title: "Home Staging Tips to Attract Buyers Quickly",
     author: "Brooklyn Simmons",
     date: "July 9, 2024",
+    authorImg: "/about/ar3.png",
   },
   {
     id: 2,
@@ -118,6 +118,7 @@ const articles = [
     title: "Navigating the Mortgage Approval Process",
     author: "Jerome Bell",
     date: "July 9, 2024",
+    authorImg: "/about/ar2.png",
   },
   {
     id: 3,
@@ -126,18 +127,19 @@ const articles = [
     title: "The Ultimate Checklist for First-Time Home Buyers",
     author: "Ralph Edwards",
     date: "July 9, 2024",
+    authorImg: "/about/ar1.png",
   },
 ];
-
 const AboutSection = () => {
   return (
     <>
-      <section className="md:py-12 px-4 lg:px-20 border-b border-gray-200 pb-20 mb-14">
-        <h2 className="text-3xl lg:text-[65px] font-semibold text-gray-900 md:mb-16 max-w-[910px] leading-10 md:leading-[75px] py-6 md:py-0">
-          About our <span className="text-[#FF6700]">Real estate</span> Company
+      <section className="md:py-12 px-4 lg:px-20 border-b max-w-[1500px] mx-auto border-[#C9C9C9] pb-20 mb-14">
+        <h2 className="text-3xl lg:text-[64px] font-bold text-[#020617] md:mb-16 leading-10 md:leading-[75px] py-6 md:py-0 font-abhaya">
+          About our <span className="text-[#FF6700]">Real estate</span>
+          <br /> Company
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Image */}
           <div>
             <img
@@ -149,19 +151,19 @@ const AboutSection = () => {
           {/* Right Column - Content */}
           <div>
             {/* Experience Card */}
-            <div className=" flex items-end justify-center">
-              <div className=" relative border border-gray-200 max-w-[400px] rounded-lg overflow-hidden mb-10">
+            <div className="flex items-end justify-center">
+              <div className="relative border border-gray-200 max-w-[450px] rounded-lg overflow-hidden mb-10">
                 <img src="/about/img3.png" alt="img3" />
                 <div className="absolute bottom-0 left-0 p-4">
-                  <p className="md:text-[100px]">25 +</p>
-                  <p className="text-[#020617] text-[25px] font-[500]">
-                    years of real estate experience
+                  <p className="md:text-[100px] font-exo2">25 +</p>
+                  <p className="text-[#020617] text-[24px] font-[500] font-poppins">
+                    Years Of Real Estate Experience
                   </p>
                 </div>
               </div>
             </div>
 
-            <p className="text-gray-700 text-sm lg:text-base mb-8 leading-relaxed">
+            <p className="text-[#020617] text-sm lg:text-[14px] font-[400] font-poppins mb-8 leading-[22px]">
               Our agency takes a collaborative approach, working closely with
               you to understand your business, how to grow up, craft
               personalized marketing solutions that align with our vision, and
@@ -173,10 +175,10 @@ const AboutSection = () => {
               {/* Story Section */}
               <div className="flex gap-4 max-w-md">
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">
+                  <h4 className="text-[20px] font-[500] text-[#020617] mb-2 font-poppins">
                     Our Story
                   </h4>
-                  <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
+                  <p className="text-[#020617] text-sm lg:text-[14px] font-[400] font-poppins mb-8 leading-[22px]">
                     At ProNest, we make finding your dream home effortless with
                     personalized, expert guidance. Your journey to the perfect
                     property starts here.
@@ -185,12 +187,12 @@ const AboutSection = () => {
               </div>
 
               {/* Mission Section */}
-              <div className="flex gap-4 max-w-md mt-10">
+              <div className="flex gap-4 max-w-md">
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">
+                  <h4 className="text-[20px] font-[500] text-[#020617] mb-2 font-poppins">
                     Our Mission
                   </h4>
-                  <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
+                  <p className="text-[#020617] text-sm lg:text-[14px] font-[400] font-poppins mb-8 leading-[22px]">
                     At ProNest, our mission is to simplify your real estate
                     journey with expert guidance and personalized service.
                   </p>
@@ -205,13 +207,15 @@ const AboutSection = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white py-12 px-4  border-b border-gray-200 pb-20 mb-14">
-        <div className="container mx-auto">
-          <div className="flex flex-wrap justify-center gap-8">
+      <section className="bg-white py-12 px-4 mb-14">
+        <div className=" border-b max-w-[1500px] mx-auto border-[#C9C9C9] pb-20">
+          <div className="flex flex-wrap justify-center gap-8 relative">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center w-[200px] h-[200px] rounded-full border border-gray-300"
+                className={`flex flex-col items-center justify-center w-[270px] h-[270px] rounded-full border border-gray-300 ${
+                  index === 1 || index === 3 ? "-translate-y-10" : ""
+                }`}
               >
                 <h3 className="text-3xl font-semibold text-gray-900">
                   {stat.value}
@@ -224,51 +228,48 @@ const AboutSection = () => {
           </div>
         </div>
       </section>
+
       <section className="bg-white py-12 px-6">
-        <div className="container mx-auto flex justify-between max-w-5xl">
+        <div className="max-w-6xl mx-auto flex justify-between">
           {/* Heading */}
           <div className="mb-10">
-            <h2 className="text-3xl lg:text-5xl font-semibold text-gray-900 leading-tight">
-              How We Can <span className="text-orange-500">Help</span> You
+            <h2 className="text-3xl lg:text-[64px] font-bold text-[#020617] leading-[75px] font-abhaya">
+              How We Can <br /> <span className="text-[#FF6700]">Help</span> You
             </h2>
           </div>
 
           {/* Items */}
-          <div className="space-y-8">
+          <div className="space-y-8 lg:w-3/5">
             {items.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center justify-between border-b border-gray-200 pb-6"
+                className="flex items-center justify-between border-b border-[#C9C9C9] pb-10"
               >
                 {/* Left Section - Icon and Text */}
                 <div className="flex items-center gap-6">
                   {/* Icon */}
-                  <div className="flex items-center justify-center w-14 h-14 bg-orange-500 text-white rounded-full text-xl">
-                    {item.icon}
-                  </div>
+                  <img src={item.icon} alt="img" />
 
                   {/* Title and Description */}
                   <div>
-                    <h3 className="text-[20px] font-semibold text-[#020617]">
+                    <h3 className="text-[20px] font-semibold text-[#020617] font-poppins">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-gray-600 max-w-md">
+                    <p className="text-sm text-[#020617] max-w-md text-[14px] font-[400] font-poppins mt-5">
                       {item.description}
                     </p>
                   </div>
                 </div>
 
                 {/* Right Arrow */}
-                <div>
-                  <FiArrowRight className="text-orange-500 text-2xl" />
-                </div>
+                <img src="/about/help-icon4.png" alt="img" />
               </div>
             ))}
           </div>
         </div>
       </section>
       <section className=" py-12 px-6">
-        <div className="container mx-auto">
+        <div className="max-w-[1500px] mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamMembers.map((member, index) => (
               <div
@@ -282,42 +283,44 @@ const AboutSection = () => {
                   alt={member.name}
                   className="mx-auto object-cover  mb-4"
                 />
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-[28px] font-semibold text-[#020617] font-poppins">
                   {member.name}
                 </h3>
-                <p className="text-gray-500">{member.role}</p>
+                <p className="text-[#6E6E6E] text-[26px] font-semibold font-poppins">
+                  {member.role}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <div className="bg-gray-50">
+      <div>
         <section className=" py-12 px-6 max-w-7xl mx-auto">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+            <h2 className="text-[64px] font-abhaya font-bold text-center text-[#020617] mb-10">
               Discover Our{" "}
-              <span className="text-orange-500">Clients Experiences</span>
+              <span className="text-[#FF6700]">Clients Experiences</span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg p-6 text-center border border-gray-200"
+                  className="bg-white rounded-lg p-6 border border-gray-200"
                 >
-                  <p className="text-gray-700 mb-6 italic">
+                  <p className="text-[#020617] mb-6 text-[14px] font-[400] font-poppins">
                     "{testimonial.quote}"
                   </p>
-                  <div className="flex items-center justify-center">
+                  <div className="flex items-center justify-start">
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
                       className="w-12 h-12 rounded-full mr-4"
                     />
                     <div>
-                      <h3 className="font-semibold text-gray-900">
+                      <h3 className="font-[500] text-[16px] font-poppins text-[#020617]">
                         {testimonial.name}
                       </h3>
-                      <p className="text-gray-500 text-sm">
+                      <p className="text-[#020617] text-[14px] font-[400] font-poppins">
                         {testimonial.role}
                       </p>
                     </div>
@@ -328,12 +331,12 @@ const AboutSection = () => {
           </div>
         </section>
       </div>
-      <section className="py-16 px-4 lg:px-32">
+      <section className="max-w-[1500px] mx-auto py-16 px-4 lg:px-32">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-semibold text-gray-800">
-            Latest <span className="text-orange-500">Articles</span>
+          <h2 className="text-[64px] font-abhaya font-bold text-center text-[#020617] mb-1">
+            Latest <span className="text-[#FF6700]">Articles</span>
           </h2>
-          <p className="text-gray-500 mt-2">
+          <p className="text-[#000000] text-[18px] font-[400] font-poppins">
             Personalized property recommendations, expert advice, <br />
             throughout the buying or renting process.
           </p>
@@ -357,30 +360,34 @@ const ArticleCard = ({ article }) => (
         alt={article.title}
         className="w-full h-48 object-cover rounded-md"
       />
-      <span className="absolute top-4 left-4 bg-transparent border border-[#003366] text-[#003366] text-sm font-medium px-3 py-1 rounded-full">
+      <span className="absolute top-4 left-4 bg-transparent border border-[#003366] text-[#003366] text-sm font-medium px-3 py-1 rounded-[4px]">
         {article.category}
       </span>
     </div>
-    <div className="p-4">
-      <h3 className="text-lg font-semibold text-gray-800 mb-2">
+    <div>
+      <h3 className="text-[20px] font-semibold text-[#020617] mb-2 font-poppins">
         {article.title}
       </h3>
-      <hr className="border-gray-300 mb-3" />
+      <hr className="border-[#D9D9D9] my-3 mb-5" />
       <div className="flex items-center justify-between bg-[#ECECEC] rounded-md p-2">
         <div className="flex items-center">
           <img
-            src="/about/ar1.png" // Replace with author image URL
+            src={article.authorImg} // Replace with author image URL
             alt={article.author}
             className="w-10 h-10 rounded-full mr-3"
           />
           <div>
-            <p className="text-sm font-medium text-gray-700">
+            <p className="text-[16px] font-[600] font-poppins text-[#020617]">
               {article.author}
             </p>
-            <p className="text-xs text-gray-500">{article.date}</p>
+            <p className="text-[14px] font-[400] font-poppins text-[#6E6E6E]">
+              {article.date}
+            </p>
           </div>
         </div>
-        <button className="text-orange-500">{" > "}</button>
+        <button className="text-orange-500">
+          <img src="/about/Vector.png" alt="vector" />
+        </button>
       </div>
     </div>
   </div>

@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.property-slider {
+    padding-bottom: 60px; /* Make space for navigation buttons */
+  }
+  
+  .swiper-slide {
+    transition: transform 0.3s ease;
+  }
